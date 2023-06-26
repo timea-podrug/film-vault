@@ -1,5 +1,9 @@
 # Film Vault
 
+
+![film-vault_screenshot](https://github.com/timea-podrug/film-vault/assets/108535463/277cbcfd-644a-4774-8c15-1cc0df79d733)
+
+
 Film Vault is a React-based application that utilizes the OMDb API to provide users with the ability to search for movies, view their details, add ratings, and create a personalized watched list. This README file will guide you through the installation process and provide an overview of the application's features.
 
 ## Installation
