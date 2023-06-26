@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Film Vault
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Film Vault is a React-based application that utilizes the OMDb API to provide users with the ability to search for movies, view their details, add ratings, and create a personalized watched list. This README file will guide you through the installation process and provide an overview of the application's features.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+To run Film Vault locally on your machine, follow these steps:
 
-### `npm start`
+1. Clone the repository to your local machine using the following command:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+   ```
+   git clone https://github.com/timea-podrug/film-vault
+   ```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navigate to the project directory:
 
-### `npm test`
+   ```
+   cd film-vault
+   ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Install the required dependencies using your preferred package manager. For example, with npm:
 
-### `npm run build`
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Create an account on the [OMDb API website](http://www.omdbapi.com/) and obtain an API key.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. Go to the App.js file and replace the existing key with your actual API key:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```
+   export const KEY = "<YOUR_API_KEY>";
+   ```
 
-### `npm run eject`
+6. Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+7. Open your web browser and navigate to `http://localhost:3000` to access Film Vault.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Film Vault offers the following features:
 
-## Learn More
+- **Movie Search**: Users can search for movies by title using the search bar. The application retrieves data from the OMDb API and displays a list of matching movies.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Movie Details**: Clicking on a movie from the search results displays detailed information about the selected movie, including its title, release year, runtime, genre, director, actors, plot, and poster.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Rating**: Users can rate the movies they have watched by selecting a rating from 1 to 5 stars. The ratings are stored locally and associated with the respective movies.
 
-### Code Splitting
+- **Watched List**: Users can add movies to their watched list by clicking the "Add to Watched" button on the movie details page. The watched list displays all the movies that users have marked as watched, along with their ratings.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Technologies Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Film Vault is built with the following technologies:
 
-### Making a Progressive Web App
+- React: A JavaScript library for building user interfaces.
+- OMDb API: An API that provides access to a vast collection of movie data.
+- HTML5: The latest version of the Hypertext Markup Language.
+- CSS3: The latest version of Cascading Style Sheets.
+- JavaScript: A high-level programming language.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+If you have any questions or inquiries, please feel free to contact me at [timeapodrug@gmail.com](mailto:timeapodrug@gmail.com). Thank you for using Film Vault!
